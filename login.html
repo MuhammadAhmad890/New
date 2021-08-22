@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .button {
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Food Delivery</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+            <li><a href="Admin.html"><span class="glyphicon glyphicon-log-in"></span> Admin Login</a></li>
+          </ul>
+        </div>
+      </nav> 
+
+          
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>
+                LOGIN
+            </h2>
+            <p id="log"></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="margin-top:10px;">
+            <input type="Email" id="email2" class="form-control" placeholder="Email" style="margin-top:10px;">
+            <input type="password" id="password2" class="form-control" placeholder="Password"  style="margin-top:10px;">
+            <center><button class="button button1"  onclick="login()" >Login</button></center>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+
+
+       <!-- =============FireBase=========== -->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+      <script src="firebase-link.js"></script>
+      <script src="website.js"></script>
+      </body>
+
+</html>
